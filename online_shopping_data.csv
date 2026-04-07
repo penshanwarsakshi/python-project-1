@@ -1,6 +1,11 @@
-Product_ID,Price,Rating,Purchase
-P101,500,4.5,Yes
-P102,1200,4.0,No
-P103,750,3.8,Yes
-P104,2000,4.7,Yes
-P105,300,3.5,No
+Product_ID,Category,Price,Rating,Discount,Delivery_Time,Purchase
+P101,Electronics,500,4.5,10,2,Yes
+P102,Fashion,1200,4.0,15,5,No
+P103,Home,750,3.8,5,3,Yes
+P104,Electronics,2000,4.7,20,1,Yes
+P105,Fashion,300,3.5,10,4,No
+P106,Home,950,4.2,12,2,Yes
+P107,Electronics,1500,4.6,18,1,Yes
+P108,Fashion,400,3.9,8,6,No
+P109,Home,600,4.1,7,3,Yes
+P110,Electronics,2200,4.8,25,1,Yes
