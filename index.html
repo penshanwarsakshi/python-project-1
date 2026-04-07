@@ -2,26 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Online Shopping Analysis</title>
+    <title>Online Shopping Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Online Shopping Data Analysis</h1>
+<header>
+    <h1>🛒 Online Shopping Dashboard</h1>
+</header>
 
-    <div class="container">
-        <button onclick="loadData()">Load Dataset</button>
+<!-- FILTER SECTION -->
+<div class="filters">
+    <input type="text" id="searchInput" placeholder="Search Product ID...">
+    
+    <select id="purchaseFilter">
+        <option value="all">All</option>
+        <option value="Yes">Purchased</option>
+        <option value="No">Not Purchased</option>
+    </select>
 
-        <h2>Dataset Preview</h2>
-        <table id="dataTable"></table>
+    <button onclick="applyFilter()">Apply Filter</button>
+</div>
 
-        <h2>Visualizations</h2>
-        <canvas id="priceChart"></canvas>
-        <canvas id="ratingChart"></canvas>
+<!-- CARDS -->
+<div class="cards">
+    <div class="card">
+        <h3>Total Products</h3>
+        <p id="totalProducts">0</p>
     </div>
+    <div class="card">
+        <h3>Average Price</h3>
+        <p id="avgPrice">0</p>
+    </div>
+    <div class="card">
+        <h3>Average Rating</h3>
+        <p id="avgRating">0</p>
+    </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+<!-- TABLE -->
+<div class="table-container">
+    <h2>Dataset Preview</h2>
+    <table id="dataTable"></table>
+</div>
+
+<!-- CHARTS -->
+<div class="charts">
+    <canvas id="priceChart"></canvas>
+    <canvas id="ratingChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
