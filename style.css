@@ -1,40 +1,85 @@
 body {
-    font-family: Arial;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI';
+    margin: 0;
+    background: #eef2f7;
+}
+
+header {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
-h1 {
-    color: #333;
+/* FILTERS */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+.filters input, .filters select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 25%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* TABLE */
+.table-container {
+    margin: 20px;
     background: white;
     padding: 20px;
     border-radius: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    background: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
 table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
 }
 
-table, th, td {
-    border: 1px solid black;
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* CHARTS */
+.charts {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
 }
 
 canvas {
-    margin-top: 20px;
+    width: 40% !important;
 }
